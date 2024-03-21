@@ -41,7 +41,7 @@ export function ProjectsSection() {
                 {project.description}
               </p>
 
-              <div className="ml-auto mt-auto flex justify-between gap-4">
+              <div className="ml-auto mt-auto grid w-full grid-cols-1 gap-4 lg:grid-cols-2">
                 {project.links.map((link, index) => (
                   <Button
                     key={index}
