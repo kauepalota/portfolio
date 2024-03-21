@@ -46,12 +46,12 @@ export const projectList: Project[] = [
     links: [
       {
         tooltip: 'Front-end',
-        href: 'https://github.com/kauepalota/sicredi-tech-challenge',
+        href: 'https://github.com/kauepalota/facilita-juridico-frontend-refactor',
         icon: <Github size={24} />,
       },
       {
         tooltip: 'Back-end',
-        href: 'https://github.com/kauepalota/sicredi-tech-challenge',
+        href: 'https://github.com/kauepalota/facilita-juridico-backend-refactor',
         icon: <Github size={24} />,
       },
     ],

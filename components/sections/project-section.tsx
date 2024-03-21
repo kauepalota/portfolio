@@ -31,7 +31,7 @@ export function ProjectsSection() {
               src={project.icon}
               height={350}
               width={600}
-              className="bg-primary object-fill object-center"
+              className="bg-white object-fill object-center"
             />
 
             <div className="flex h-full flex-col rounded-sm p-4">
