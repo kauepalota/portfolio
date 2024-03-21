@@ -1,4 +1,5 @@
 import { Header } from '@/components/header'
+import { ContactSection } from '@/components/sections/contact-section'
 import { IntroductionSection } from '@/components/sections/introduction-section'
 import { ProjectsSection } from '@/components/sections/project-section'
 
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="flex-1">
         <IntroductionSection />
         <ProjectsSection />
+        <ContactSection />
       </main>
     </div>
   )

@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import Profile from '@/assets/profile.jpg'
 import React from 'react'
+
 export function IntroductionSection() {
   return (
     <section

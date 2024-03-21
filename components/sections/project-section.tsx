@@ -51,6 +51,7 @@ export function ProjectsSection() {
                   >
                     <Link
                       href={link.href}
+                      target="_blank"
                       className={cn(
                         'flex gap-2',
                         link.href ? 'cursor-pointer' : 'cursor-not-allowed',
