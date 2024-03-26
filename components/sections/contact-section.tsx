@@ -13,7 +13,9 @@ export function ContactSection() {
       <div className="space-y-4">
         <span className="rounded-lg bg-muted px-3 py-1 text-sm">Contact</span>
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          {`Get in Touch`}
+          {`Get `}
+          <span className="text-primary">in</span>
+          {` Touch`}
         </h1>
         <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           {`
@@ -23,28 +25,28 @@ export function ContactSection() {
       </div>
       <div className="grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <Link target="_blank" href={contact.github}>
-          <Button variant="link">
+          <Button variant="link" className="text-primary-foreground">
             <Github className="mr-2 h-5 w-5" />
             Github
           </Button>
         </Link>
 
         <Link target="_blank" href={`mailto:${contact.email}`}>
-          <Button variant="link">
+          <Button variant="link" className="text-primary-foreground">
             <Mail className="mr-2 h-5 w-5" />
             Email
           </Button>
         </Link>
 
         <Link target="_blank" href={contact.linkedin}>
-          <Button variant="link">
+          <Button variant="link" className="text-primary-foreground">
             <Linkedin className="mr-2 h-5 w-5" />
             Linkedin
           </Button>
         </Link>
 
         <Link target="_blank" href={contact.instagram}>
-          <Button variant="link">
+          <Button variant="link" className="text-primary-foreground">
             <Instagram className="mr-2 h-5 w-5" />
             Instagram
           </Button>
