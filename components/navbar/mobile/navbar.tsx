@@ -4,14 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet'
 
 import NavbarLink from './navbar-link'
-import {
-  HomeIcon,
-  Menu,
-  PaintBucket,
-  PaintBucketIcon,
-  PhoneCallIcon,
-  PhoneForwardedIcon,
-} from 'lucide-react'
+import { HomeIcon, Menu, PaintBucketIcon, PhoneCallIcon } from 'lucide-react'
 import { useState } from 'react'
 
 export function MobileNavbar() {
