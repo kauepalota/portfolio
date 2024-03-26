@@ -4,7 +4,14 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet'
 
 import NavbarLink from './navbar-link'
-import { Menu } from 'lucide-react'
+import {
+  HomeIcon,
+  Menu,
+  PaintBucket,
+  PaintBucketIcon,
+  PhoneCallIcon,
+  PhoneForwardedIcon,
+} from 'lucide-react'
 import { useState } from 'react'
 
 export function MobileNavbar() {
@@ -27,12 +34,15 @@ export function MobileNavbar() {
             onClick={() => handleLinkClick()}
             destination="#introduction"
           >
+            <HomeIcon className="mr-2 size-5" />
             Introduction
           </NavbarLink>
           <NavbarLink onClick={() => handleLinkClick()} destination="#skills">
+            <PaintBucketIcon className="mr-2 size-5" />
             Skills
           </NavbarLink>
           <NavbarLink onClick={() => handleLinkClick()} destination="#contact">
+            <PhoneCallIcon className="mr-2 size-5" />
             Contact
           </NavbarLink>
         </nav>

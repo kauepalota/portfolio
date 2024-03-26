@@ -12,7 +12,7 @@ export default function MobileLink({
     <Link
       target={external ? '_blank' : '_self'}
       href={destination}
-      className="text-muted-foreground hover:text-foreground"
+      className="flex items-center text-muted-foreground hover:text-foreground"
       {...props}
     >
       {children}
