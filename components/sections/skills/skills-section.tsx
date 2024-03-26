@@ -45,7 +45,7 @@ export function SkillsSection() {
           skills={['Redis', 'RabbitMQ', 'Kafka']}
         />
         <SkillGroupCard
-          name="Devops"
+          name="DevOps"
           skills={['Docker', 'Git', 'Github Actions']}
         />
         <SkillGroupCard name="AWS" skills={['S3', 'Lambda']} />
