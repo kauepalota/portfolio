@@ -1,7 +1,8 @@
 'use client'
 
-import { FadeIn } from '@/components/animation/fade-in'
 import { SkillGroupCard } from './skill-group-card'
+
+import { motion } from 'framer-motion'
 
 export function SkillsSection() {
   return (
@@ -9,11 +10,15 @@ export function SkillsSection() {
       id="skills"
       className="container grid items-start gap-4 px-4 py-12 sm:grid-cols-2 md:px-6 md:py-24 lg:gap-10 lg:py-32"
     >
-      <FadeIn
-        startOnScrollIntersect
-        to="right"
-        delay={0.1}
-        duration={0.5}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        variants={{
+          visible: { opacity: 1, x: 0, y: 0 },
+          hidden: { opacity: 0, x: -50, y: 50 },
+        }}
         className="space-y-4"
       >
         <span className="rounded-lg bg-muted px-3 py-1 text-sm">Skills</span>
@@ -28,9 +33,19 @@ export function SkillsSection() {
           I'm always looking for new challenges and opportunities to learn new things.
           `}
         </p>
-      </FadeIn>
+      </motion.div>
 
-      <div className="grid w-full grid-cols-2 gap-4 md:gap-6">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        variants={{
+          visible: { opacity: 1, x: 0, y: 0 },
+          hidden: { opacity: 0, x: 50, y: 50 },
+        }}
+        className="grid w-full grid-cols-2 gap-4 md:gap-6"
+      >
         <SkillGroupCard
           name="Programming languages"
           shortName="Languages"
@@ -58,7 +73,7 @@ export function SkillsSection() {
           skills={['Docker', 'Git', 'Github Actions']}
         />
         <SkillGroupCard name="AWS" skills={['S3', 'Lambda']} />
-      </div>
+      </motion.div>
     </section>
   )
 }
