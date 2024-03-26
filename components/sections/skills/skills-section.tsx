@@ -29,7 +29,7 @@ export function SkillsSection() {
         />
         <SkillGroupCard
           name="Frameworks"
-          skills={['Spring boot', 'Ktor', 'NodeJS']}
+          skills={['Spring', 'Ktor', 'NodeJS']}
         />
         <SkillGroupCard
           name="Data storage and caching"
