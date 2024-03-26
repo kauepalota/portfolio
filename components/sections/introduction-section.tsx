@@ -1,7 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 
 import Profile from '@/public/profile.jpg'
 import React from 'react'
+import { FadeIn } from '../animation/fade-in'
 
 export function IntroductionSection() {
   return (
@@ -9,7 +12,13 @@ export function IntroductionSection() {
       id="introduction"
       className="container grid w-full items-center gap-4 px-4 py-12 max-sm:space-y-4 sm:grid-cols-2 md:px-6 md:py-24 lg:gap-10 lg:py-32"
     >
-      <div className="space-y-4">
+      <FadeIn
+        startOnScrollIntersect
+        to="right"
+        delay={0.1}
+        duration={0.5}
+        className="space-y-4"
+      >
         <span className="rounded-lg bg-muted px-3 py-1 text-sm">
           Introduction
         </span>
@@ -26,15 +35,21 @@ export function IntroductionSection() {
           I'm seeking opportunities to grow my skills, particularly in fullstack development.
           `}
         </p>
-      </div>
-      <div className="flex justify-center">
+      </FadeIn>
+      <FadeIn
+        startOnScrollIntersect
+        to="left"
+        delay={0.1}
+        duration={0.5}
+        className="flex justify-center"
+      >
         <Image
           alt="Photo"
           className="mx-auto aspect-[1/1] overflow-hidden rounded-full object-cover object-center"
           height="400"
           src={Profile}
         />
-      </div>
+      </FadeIn>
     </section>
   )
 }

@@ -1,3 +1,5 @@
+'use client'
+
 import { SkillGroupCard } from './skill-group-card'
 
 export function SkillsSection() {
