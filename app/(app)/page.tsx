@@ -1,7 +1,7 @@
 import { Header } from '@/components/header'
 import { ContactSection } from '@/components/sections/contact-section'
 import { IntroductionSection } from '@/components/sections/introduction-section'
-import { ProjectsSection } from '@/components/sections/project-section'
+import { SkillsSection } from '@/components/sections/skills/skills-section'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
 
       <main className="flex-1">
         <IntroductionSection />
-        <ProjectsSection />
+        <SkillsSection />
         <ContactSection />
       </main>
     </div>

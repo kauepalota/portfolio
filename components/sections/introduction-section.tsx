@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Profile from '@/assets/profile.jpg'
+import Profile from '@/public/profile.jpg'
 import React from 'react'
 
 export function IntroductionSection() {
@@ -14,7 +14,9 @@ export function IntroductionSection() {
           Introduction
         </span>
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          {`Hi, I'm Kauê Palota`}
+          {`Hi, I'm `}
+
+          <span className="text-primary">Kauê Palota</span>
         </h1>
         <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           {`
@@ -31,7 +33,6 @@ export function IntroductionSection() {
           className="mx-auto aspect-[1/1] overflow-hidden rounded-full object-cover object-center"
           height="400"
           src={Profile}
-          width="400"
         />
       </div>
     </section>
