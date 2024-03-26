@@ -1,5 +1,5 @@
 import React from 'react'
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react'
+import { Instagram, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { contact } from '@/config/contact'
 import { Button } from '../ui/button'
@@ -24,13 +24,6 @@ export function ContactSection() {
         </p>
       </div>
       <div className="grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <Link target="_blank" href={contact.github}>
-          <Button variant="link" className="text-primary-foreground">
-            <Github className="mr-2 h-5 w-5" />
-            Github
-          </Button>
-        </Link>
-
         <Link target="_blank" href={`mailto:${contact.email}`}>
           <Button variant="link" className="text-primary-foreground">
             <Mail className="mr-2 h-5 w-5" />
