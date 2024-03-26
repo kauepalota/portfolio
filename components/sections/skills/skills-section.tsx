@@ -1,5 +1,6 @@
 'use client'
 
+import { FadeIn } from '@/components/animation/fade-in'
 import { SkillGroupCard } from './skill-group-card'
 
 export function SkillsSection() {
@@ -8,7 +9,13 @@ export function SkillsSection() {
       id="skills"
       className="container grid items-start gap-4 px-4 py-12 sm:grid-cols-2 md:px-6 md:py-24 lg:gap-10 lg:py-32"
     >
-      <div className="space-y-4">
+      <FadeIn
+        startOnScrollIntersect
+        to="right"
+        delay={0.1}
+        duration={0.5}
+        className="space-y-4"
+      >
         <span className="rounded-lg bg-muted px-3 py-1 text-sm">Skills</span>
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           {`My super`}
@@ -21,7 +28,7 @@ export function SkillsSection() {
           I'm always looking for new challenges and opportunities to learn new things.
           `}
         </p>
-      </div>
+      </FadeIn>
 
       <div className="grid w-full grid-cols-2 gap-4 md:gap-6">
         <SkillGroupCard

@@ -14,7 +14,7 @@ export function SkillGroupCard({ name, shortName, skills }: SkillGroup) {
   }
 
   return (
-    <FadeIn startOnScrollIntersect delay={0.1} duration={0.4}>
+    <FadeIn to="left" startOnScrollIntersect delay={0.1} duration={0.4}>
       <Card className="overflow-hidden rounded-3xl border-none bg-gradient-to-bl from-orange-400 to-primary">
         <CardHeader>
           <FadeIn to="top" startOnScrollIntersect delay={0.2} duration={0.4}>
