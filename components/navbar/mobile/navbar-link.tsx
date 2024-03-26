@@ -1,16 +1,19 @@
 import Link from 'next/link'
 import { NavbarProps } from '../link'
+import React from 'react'
 
 export default function MobileLink({
   destination,
   external,
   children,
-}: NavbarProps) {
+  ...props
+}: NavbarProps & React.LinkHTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       target={external ? '_blank' : '_self'}
       href={destination}
       className="text-muted-foreground hover:text-foreground"
+      {...props}
     >
       {children}
     </Link>
