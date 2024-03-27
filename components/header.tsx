@@ -7,7 +7,7 @@ import { MobileNavbar } from './navbar/mobile/navbar'
 
 export function Header() {
   return (
-    <header className="sticky top-0 flex h-14 items-center justify-between bg-background px-4 shadow-md lg:px-6">
+    <header className="flex h-14 items-center justify-between bg-background px-4 shadow-md lg:px-6">
       <MainNavbar />
 
       <div className="mr-2 flex gap-3">
