@@ -34,9 +34,9 @@ export function IntroductionSection() {
         <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           {`
           I'm a backend developer skilled in Spring Boot, Ktor, Java, and Kotlin. 
-          Recently, I've developed an interest in frontend development. 
-          Despite my lack of professional experience in this area, 
-          I'm seeking opportunities to grow my skills, particularly in fullstack development.
+          I'm actively expanding my skillset to include frontend development, 
+          aiming to become a well-rounded full-stack engineer. 
+          My strong foundation in backend technologies allows me to quickly adapt to new technologies.
           `}
         </p>
       </motion.div>
