@@ -13,7 +13,6 @@ export function SkillsSection() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         variants={{
           visible: { opacity: 1, x: 0, y: 0 },
@@ -38,41 +37,45 @@ export function SkillsSection() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         variants={{
           visible: { opacity: 1, x: 0, y: 0 },
           hidden: { opacity: 0, x: 50, y: 50 },
         }}
-        className="grid w-full grid-cols-2 gap-4 md:gap-6"
+        className="flex flex-row gap-4 md:gap-6"
       >
-        <SkillGroupCard
-          name="Programming languages"
-          shortName="Languages"
-          skills={['Java', 'Kotlin', 'Typescript']}
-        />
-        <SkillGroupCard
-          name="Frameworks"
-          skills={['Spring', 'Ktor', 'NodeJS']}
-        />
-        <SkillGroupCard
-          name="Data storage and caching"
-          shortName="Data & Caching"
-          skills={['PostgreSQL', 'MySQL', 'MongoDB', 'Redis']}
-        />
-        <SkillGroupCard
-          name="Client side"
-          skills={['React', 'NextJS', 'Tailwind', 'Redux', 'Recoil']}
-        />
-        <SkillGroupCard
-          name="Messaging"
-          skills={['Redis', 'RabbitMQ', 'Kafka']}
-        />
-        <SkillGroupCard
-          name="DevOps"
-          skills={['Docker', 'Git', 'Github Actions']}
-        />
-        <SkillGroupCard name="AWS" skills={['S3', 'Lambda']} />
+        <div className="flex flex-col gap-4 md:gap-6">
+          <SkillGroupCard
+            name="Programming languages"
+            shortName="Languages"
+            skills={['Java', 'Kotlin', 'Typescript']}
+          />
+          <SkillGroupCard
+            name="Frameworks"
+            skills={['Spring', 'Ktor', 'NodeJS']}
+          />
+          <SkillGroupCard
+            name="Data storage and caching"
+            shortName="Data & Caching"
+            skills={['PostgreSQL', 'MySQL', 'MongoDB', 'Redis']}
+          />
+          <SkillGroupCard name="AWS" skills={['S3', 'Lambda']} />
+        </div>
+
+        <div className="flex flex-col gap-4 md:gap-6">
+          <SkillGroupCard
+            name="Client side"
+            skills={['React', 'NextJS', 'Tailwind', 'Redux', 'Recoil']}
+          />
+          <SkillGroupCard
+            name="Messaging"
+            skills={['Redis', 'RabbitMQ', 'Kafka']}
+          />
+          <SkillGroupCard
+            name="DevOps"
+            skills={['Docker', 'Git', 'Github Actions']}
+          />
+        </div>
       </motion.div>
     </section>
   )
