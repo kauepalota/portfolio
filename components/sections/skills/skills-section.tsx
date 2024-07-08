@@ -48,32 +48,45 @@ export function SkillsSection() {
           <SkillGroupCard
             name="Programming languages"
             shortName="Languages"
-            skills={['Java', 'Kotlin', 'Typescript']}
+            skills={['Java', 'Kotlin', 'Python', 'Typescript']}
           />
           <SkillGroupCard
-            name="Frameworks"
-            skills={['Spring', 'Ktor', 'NodeJS']}
+            name="Frontend Frameworks"
+            skills={['React', 'NextJS', 'Tailwind', 'Redux', 'Recoil']}
           />
           <SkillGroupCard
             name="Data storage and caching"
             shortName="Data & Caching"
-            skills={['PostgreSQL', 'MySQL', 'MongoDB', 'Redis']}
+            skills={['PostgreSQL', 'DynamoDB', 'MySQL', 'MongoDB', 'Redis']}
           />
-          <SkillGroupCard name="AWS" skills={['S3', 'Lambda']} />
+          <SkillGroupCard
+            name="AWS"
+            skills={[
+              'S3',
+              'Lambda',
+              'SQS',
+              'CloudFormation',
+              'SNS',
+              'QuickSight',
+              'Glue',
+              'Step Functions',
+              'Athena',
+            ]}
+          />
         </div>
 
         <div className="flex flex-col gap-4 md:gap-6">
           <SkillGroupCard
-            name="Client side"
-            skills={['React', 'NextJS', 'Tailwind', 'Redux', 'Recoil']}
+            name="Backend Frameworks"
+            skills={['Spring Boot', 'Micronaut', 'Ktor', 'NodeJS']}
           />
           <SkillGroupCard
             name="Messaging"
-            skills={['Redis', 'RabbitMQ', 'Kafka']}
+            skills={['Redis', 'SQS', 'RabbitMQ', 'Kafka']}
           />
           <SkillGroupCard
             name="DevOps"
-            skills={['Docker', 'Git', 'Github Actions']}
+            skills={['Docker', 'Terraform', 'Github Actions']}
           />
         </div>
       </motion.div>
