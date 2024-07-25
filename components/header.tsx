@@ -14,7 +14,7 @@ export function Header() {
         <Link target="_blank" href={contact.github}>
           <GithubIcon className="hover:text-primary" width={40} height={40} />
         </Link>
-        <Link target="_blank" href={'resume.pdf'}>
+        <Link target="_blank" href={'Kauê Palota - Software Engineer.pdf'}>
           <PrinterIcon className="hover:text-primary" width={40} height={40} />
         </Link>
       </div>
