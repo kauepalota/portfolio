@@ -18,6 +18,7 @@ export function ContactSection() {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, x: 0, y: 0 },
           hidden: { opacity: 0, x: -50, y: 50 },
@@ -40,6 +41,7 @@ export function ContactSection() {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, x: 0, y: 0 },
           hidden: { opacity: 0, x: 50, y: 50 },

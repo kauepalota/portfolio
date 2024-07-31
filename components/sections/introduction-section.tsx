@@ -17,6 +17,7 @@ export function IntroductionSection() {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         variants={{
           visible: { opacity: 1, x: 0, y: 0 },
           hidden: { opacity: 0, x: -50, y: 50 },
@@ -32,17 +33,19 @@ export function IntroductionSection() {
           <span className="text-primary">Kauê Palota</span>
         </h1>
         <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          {`
-          I'm a backend developer skilled in Spring Boot, Ktor, Java, and Kotlin. 
-          I'm actively expanding my skillset to include frontend development, 
-          aiming to become a well-rounded full-stack engineer. 
-          My strong foundation in backend technologies allows me to quickly adapt to new technologies.
-          `}
+          I&apos;m an adaptable and enthusiastic software engineer with a
+          passion for modernizing systems and processes. Skilled in data
+          migration, backend development, cloud technology, and observability, I
+          quickly adapt to and improve tools and processes. My experience
+          includes consulting at IBM and developing data ingestion applications
+          for startups. I thrive on solving complex problems and delivering
+          reliable, high-quality software solutions.
         </p>
       </motion.div>
       <motion.div
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         transition={{ duration: 0.6 }}
         variants={{
           visible: { opacity: 1, rotate: 0, x: 0, y: 0 },

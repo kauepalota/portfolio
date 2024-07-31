@@ -11,6 +11,7 @@ export function SkillCard({ value }: SkillCardProps) {
       whileInView="visible"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
+      viewport={{ once: true }}
       transition={{
         delay: 0.2,
         duration: 0.5,
